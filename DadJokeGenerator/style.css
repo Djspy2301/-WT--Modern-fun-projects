@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background: linear-gradient(180deg,
+    lightblue, lightpink, lightblue);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;    /*To align item to the center horizontally*/
+    align-items: center;        /*require min-heigt to vh*/
+                                /*To align item to the center horizontally*/
+    font-family: monospace;    
+}
+
+.container{
+    background-color: rgba(255,255,255, .3 /*<---for transperency*/);
+    padding: 20px;
+    box-shadow: 0px /*for x-axis*/ 6px /*y-axis*/ 10px /*blurness*/ rgba(214, 24, 24, 0.3)/*for shadow color and its opacity*/;  /*to give shadow effect to element*/
+    border-radius: 15px;
+    width: 85%;                 /*Takes 85% width of a screen*/
+    text-align: center;         /*To align text to center*/
+    color: rgb(34, 58, 7);    /*Text color*/
+}
+
+.heading{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px/*x-axis*/ 5px/*y-axis*/ 2px/*bluring*/ rgb(0, 0, 0,.3/*transperency*/);    /*For shadow effect*/
+    letter-spacing: 3px;    /*Add spacing between letters*/
+
+}
+
+.joke{
+    font-size: 20px; 
+    margin: 40px;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 900;       /*To thick the font*/
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(156, 43, 43, 0.3);       /*To set background color of button*/
+    border-color: rgba(189, 51, 51, 0.7);       /*To set border color*/
+    text-transform: uppercase;
+    width: 300px;
+    color: rgb(34, 58, 7); 
+}
+
+.btn:hover{
+    background-color: rgba(239, 78, 78, 0.3);
+    box-shadow: 0px/*x-axis*/ 4px/*y-axis*/ 4px/*Bluring*/ rgba(0, 0, 0, .3)/*Transperency*/;
+    transition: all/*transiton to everything*/ 300ms/*duration*/ ease/*effect*/;            /*Transition effect*/
+    
+}
