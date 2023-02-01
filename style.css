@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue;
+    color: darkgreen;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;                /*To align item to the center horizontally*/
+    align-items: center;                    /*require min-heigt to vh*/
+    font-family: monospace;
+}
+
+.container{
+    background: rgba(255, 255, 255, .3 /*<---for transperency*/);
+    box-shadow: 0 /*for x-axis*/ 5px /*y-axis*/ 10px /*blurness*/ rgba(0,0,0, .3)/*for shadow color and its opacity*/;      /*to give shadow effect to element*/
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;                             /*Takes 85% width of a screen*/
+    max-width: 400px;                       /*width will not be more than 400px (85% but sill)*/
+    text-align: center;                     /*To align text to center*/
+    font-size: 20px;
+}
+
+.heading{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.rating-container{
+    display: flex;                          /*flext direction will be in row*/
+    padding: 20px 0;
+
+}
+.rating{
+    cursor: pointer;                        /*Shows pointer when hover on rating emojis*/
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active{
+    background: darkseagreen;               /*On hover background changes*/
+    border-radius: 10px;
+    box-shadow: 0 /*for x-axis*/ 0 /*for y-axis*/ 10px /*blurness*/ rgba(0,0,0, .3)/*for shadow color and its opacity*/;        /*to give shadow effect to element*/
+    color: aliceblue;                       /*On hover text color change*/
+    transition: all /*transiton to everything*/ 300ms /*duration*/ ease/*effect*/;               /*On hover transition take place for 3 seconds*/
+}
+
+.rating img{
+    width: 40px;                                            /*Make emojis in perfect size*/
+}
+
+.btn{
+    background-color: darkcyan;
+    color: aliceblue;
+    border: 0;                                              /*To remove border of button*/
+    margin: 10px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;                                        /*Shows pointer when hover on rating emojis*/
+}
+
+.btn:hover{
+    box-shadow: 0 /*x-axis*/ 5px /*y-axis*/ 10px /*bluring*/ rgba(0,0,0,0.3 /*transperency*/);        /*For shadow effect*/
+    transition: all/*transiton to everything*/ 300ms/*duration*/ ease/*effect*/;                        /*On hover transition take place for 3 seconds*/
+}
+
+.btn:active{
+    transform: scale(0.96);                                 /*button press effect*/
+}
